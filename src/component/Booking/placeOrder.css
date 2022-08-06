@@ -1,0 +1,50 @@
+.orderPage{
+    background-color: #ccc;
+    margin-top: -16px;
+    margin-bottom: -50px;
+    padding-block: 20px;
+}
+
+.billingForm{
+    width: 68%;
+    background-color: #fff;
+}
+
+.orderContainer{
+    width: 28%;
+    background-color: #fff;  
+}
+
+.btnOrder{
+    background-color: #3d3d3d;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btnOrder:hover{
+    border: 1px solid  #3d3d3d;
+    color: #3d3d3d;
+    background-color: #fff;
+}
+
+.billingForm input{
+    /* width: min(100%,300px); */
+    /* padding: 12px; */
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #1774EF;
+}
+
+.billingForm label{
+    font-size: 13px;
+    transform: translate(10px,10px);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #1774EF;
+}

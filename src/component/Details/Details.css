@@ -1,0 +1,80 @@
+.productImg{
+    width: 500px;
+}
+
+.productDetail .detailSection{
+    border-top: 1px solid #ccc;
+}
+
+.productDetail .productDesc{
+    padding-top: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.productDetail .pricingSection{
+    padding-top: 10px;
+}
+
+.productDetail .pricingSection h4{
+    font-size: 28px;
+    color: #615252;
+}
+
+.productDetail .pricingSection .discount{
+    line-height: 10px;
+}
+
+.productDetail .pricingSection img{
+    width: 100px;
+    height: 50px;
+}
+
+.productDetail .pricingSection img + img{
+    margin-left: 10px;
+}
+
+.productDetail .pricingSection button{
+    margin-top: 20px;
+    width: 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.productDetail .pricingSection form input{
+    width: min(100%,300px);
+    /* padding: 12px; */
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #1774EF;
+}
+
+.productDetail .pricingSection form label{
+    font-size: 13px;
+    transform: translate(10px,10px);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #1774EF;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.productDetailContainer{
+    min-height:500px;
+}
+
+.detailLoading{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:768px) {
+    .productDetail .productDesc{
+        border: 0;
+    }
+}

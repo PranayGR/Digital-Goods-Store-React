@@ -1,0 +1,292 @@
+header{
+    /* background-color: #f1f4ff; */
+    background-color: var(--clr-bg-primary);
+    color: #fff;
+}
+
+/* Currency Converter Menu */
+.navbar{
+    margin-bottom: 0px;
+}
+
+.currencySelectContainer{
+    position: relative;
+}
+
+.currencySelect{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+    background-color: var(--clr-bg-primary);
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+.currencySelect option {
+    background-color: var(--clr-bg-primary);
+    color: #fff !important;
+}
+
+.currencySelectContainer span{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    color: #fff;
+    pointer-events: none;
+    margin-right: 5px;
+}
+
+.currencySelectContainer:hover .currencySelect,.currencySelectContainer:hover span{
+    color: rgba(200,200,200);
+}
+
+
+        /* Top Links CSS */
+.topLinks a{
+    color: #fff;
+}
+
+.topLinks a:hover,.topLinks a:active{
+    color: rgb(200, 200, 200);
+}
+
+.navbarContainer{
+    background-color: var(--clr-bg-secondary);
+    /* background-color: #00C6CF; */
+    /* background-color: #36c8ce; */
+}
+
+.navbar{
+    padding: 0.5em 0;
+}
+
+.navbar-brand img{
+    height: 3rem;
+}
+
+.searchForm{
+    border-radius: 5px 0px 0px 5px;
+    width: 25rem;
+    box-shadow: none !important;
+}
+
+.searchBtn{
+    font-size: 13px;
+}
+
+.userIcons .userLinks{
+    font-size: 1.3rem;
+    color: rgb(80 79 79);
+}
+
+.userIcons a:hover{
+    color: black;
+}
+
+
+        /* Nav-Link Section CSS */
+
+.navLinksContainer{
+    background-color: #615252;
+    border-radius: 5px 5px 0 0;
+    height: auto;
+}
+
+.navLinks > li{
+    padding: 0.2em 1em;
+    cursor: pointer;
+}
+
+.navLink{
+    /* color: #000; */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: var(--font-wght-medium);
+}
+
+.navLinks > li:hover{
+    background-color: rgba(0,0,0,0.2)
+}
+
+.navLinks > li:hover .navLink{
+    color: #BFBFBF;
+}
+
+.categoryList{
+    position: relative;
+}
+
+.categoryDropDown{
+    position: absolute !important;
+    top: 100%;
+    left:0;
+    background-color: var(--clr-bg-secondary);
+    border-radius:0;
+}
+
+.categoryList:hover .categoryDropDown{
+    display: block;
+}
+
+.categoryDropDown .categoryItem{
+    border-bottom: 1px solid rgb(212, 205, 205);
+}
+
+.categoryDropDown .categoryItem i{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.categoryDropDown .categoryItem:hover i{
+    opacity: 1;
+}
+
+.menuIcon{
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+
+        /* Menu OffCanvas Section CSS */
+.offcanvas{
+    background-color: var(--clr-bg-secondary);
+}
+
+.menuOffcanvas{
+    max-width: 80%;
+}
+
+.resMenuSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.resNavLink{
+    font-size: 22px;
+    padding: 0.5em 0em;
+    border-bottom: 1px solid;
+    color: #000 !important;
+    font-weight: var(--font-wght-medium);
+}
+
+.resNavLink:active{
+    color: rgb(80 79 79) !important;
+}
+
+.resNavLink > i{
+    margin-left: 1%;
+}
+
+.resCategoryDropdown{
+    display: none;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.resCategoryDropdown a{
+    font-size: 23px;
+    color: #000 !important;
+}
+
+.categoryIcons{
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.canvasFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Weather App Section */
+.weatherSection{
+    background-color: #dbdbdb;
+    width: 100px;
+    height: 35px;
+    top:0;
+    right:0;
+    border-radius: 0px 0px 0 5px;
+}
+
+#weatherImage img{
+    height: 100%;
+}
+
+#temperature{
+    font-weight: var(--font-wght-bold);
+}
+
+.logoutBtn{
+    cursor: pointer;
+}
+
+.searchResults{
+    top: 100%;
+    width: 100%;
+    background-color: #fff;
+    max-height: 500px;
+    z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0px 2px 2px 2px #ccc;
+}
+
+.ItemName{
+    padding: 5px 10px;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.ItemName:hover{
+    background-color: #ccc;
+}
+
+/* Media Queries */
+
+    /* For Large Breakpoints */
+@media screen and (max-width:992px) {
+    .navbar-brand img{
+        height: 2.5rem;
+    }
+    .searchForm{
+        width: 15rem;
+    }
+}
+    
+    /* For Medium Breakpoints */
+@media screen and (max-width:768px) {
+    /* Navbar */
+    header{
+        display: none;
+    }
+
+    .navbar{
+        padding: 1em 0; 
+    }
+    
+    .userIcons{
+        display: none;
+    }
+
+    /* Weather Section */
+    .weatherSection{
+        display: none;
+    }
+}
+    
+    /* For Small Breakpoints */
+@media screen and (max-width:576px) {
+    /* Navbar */
+    .navbar-brand img{
+        height: 2.3rem;
+    }
+    
+    /* Offcanvas Section */
+    .menuOffcanvas{
+        max-width: 100%;
+    }
+}

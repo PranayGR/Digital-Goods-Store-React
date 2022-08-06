@@ -1,0 +1,400 @@
+/* User Section CSS */
+.userSection{
+    height: 500px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    max-width: 70%; 
+    position: relative;
+}
+
+.userSection .row{
+    height: 100%;
+}
+
+.userOption{
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.userOption .tabLinks{
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #787575;
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: var(--font-wght-medium);
+}
+
+.userOption p:hover .tabLinks{
+    color: #333;
+}
+
+.active{
+    color: #333 !important;
+}
+
+/* Account Section CSS */
+    /* Login */
+.accountSection .login h3{
+    margin-top: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.accountSection .login form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.accountSection .login input{
+    width: 100%;
+    padding: 12px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accountSection .login label{
+    font-size: 13px;
+    transform: translate(10px,10px);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #1774EF; 
+}
+
+.accountSection .login .loginBtn{
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5%;
+    font-weight: var(--font-wght-medium);
+}
+
+.accountSection .login p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 2%;
+}
+
+.accountSection .login p span{
+    font-weight: var(--font-wght-bold);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    /* Register */
+
+.accountSection .register{
+    height: 100%;
+}
+
+.accountSection .register h3{
+    margin-top: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.accountSection .register form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.accountSection .register input{
+    width: 100%;
+    padding: 5px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accountSection .register label{
+    font-size: 13px;
+    transform: translate(10px,10px);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #1774EF;
+    transition: 0.3s
+}
+
+.accountSection .register .registerBtn{
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 4%;
+    font-weight: var(--font-wght-medium);
+}
+
+.accountSection .register p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 2%;
+}
+
+.accountSection .register p span{
+    font-weight: var(--font-wght-bold);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Wishlist Section */
+.wishlistSection{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.wishlistSection::-webkit-scrollbar{
+    display: none;
+}
+
+.wishlistSection h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.favProducts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.favProducts a:hover{
+    color: #000;
+}
+
+.favProductCard{
+    max-width: 200px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.favProductCard h6{
+    font-weight: var(--font-wght-medium);
+    font-size: 17px;
+}
+
+.favProductCard:hover h6{
+    color: var(--clr-primary);
+}
+
+.favProductCard .wishlistBtn{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    font-size: 20px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius:50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    opacity: 1;
+    color: var(--clr-primary);
+}
+
+/* Cart Section */
+
+.cartSection{
+    height: 500px;
+    overflow: hidden;
+}
+
+.cartSection h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.cartProducts{
+    height: 80%;
+    overflow-y: scroll
+}
+
+.cartProductCard .cartPrice{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cartProductCard img{
+    height: 150px;
+}
+
+.cartProductCard .productQuantity{
+    width: 100px;
+    margin-left: auto;
+}
+
+.cartProductCard .productQuantity .quantity{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-inline: 5px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.cartProductCard .productQuantity button{
+    width: 30px;
+    height: 30px;
+    background-color: #CCC;
+    font-weight: bold;
+    box-shadow: 0;
+    outline: 0;
+    border: 0;
+}
+
+.cartProductCard .cartRemoveBtn{
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    background-color: transparent;
+    color: #4D89EF;
+}
+
+.avatarImg{
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+}
+
+.userName{
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.userRole{
+    margin-top: -25px;
+}
+
+.userEmail{
+    font-size: 18px;
+}
+
+#MsgPopUpDiv{
+    position: absolute;
+    top: 5%;
+    right: -40%;
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #900000;
+    box-shadow: -2px 2px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    transition: right 300ms;
+}
+
+#MsgPopUpDiv .message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+#MsgPopUpDiv .msgCloseBtn{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.wishlistLoading{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cartMinusBtn, .cartPlusBtn{
+    box-shadow: 0;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius:10px 0 0 10px;
+}
+
+.cartPlusBtn{
+    border-radius:0 10px 10px 0;
+}
+
+.cartQuantity{
+    padding: 5px 10px;
+}
+
+.cartLoading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+}
+
+.cartProceedSection{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background-color: #ff6766;
+    visibility: hidden;
+}
+
+.cartProceedItemsText{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cartProcedButton{
+    box-shadow: 0;
+    outline: 0;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 2px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.cartProcedButton:hover{
+    background-color: #fff;
+    color: #ff6766;
+}
+
+/* Media Queries */
+@media screen and (max-width:1200px){
+    .favProducts{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:500px){
+    .favProducts{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:992px){
+    .userSection{
+        max-width: 80% !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .userOption p{
+        font-size: 20px;
+    }
+}
